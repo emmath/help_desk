@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
+gem 'postmark-rails'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -21,7 +23,6 @@ end
 group :test, :development do
   gem 'sqlite3'
 end
-
 
 group :production do
   gem 'pg'

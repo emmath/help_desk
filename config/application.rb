@@ -2,6 +2,9 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+congig.action_mailer.delivery_method = :postmark
+config.action_mailer.postmark_settings = { :api_key => ENV['POSTMARK_API_KEY'] }
+
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
