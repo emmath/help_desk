@@ -8,4 +8,4 @@ Check back for the response!
 
 So easy!
 
-![ScreenShot](https://raw.github.com/{emmath}/{help_desk}/{master}/{public/helpdesk.tiff})
+![ScreenShot](public/helpdesk.tiff)
