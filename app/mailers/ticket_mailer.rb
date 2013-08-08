@@ -4,11 +4,8 @@ class TicketMailer < ActionMailer::Base
   def new_ticket(ticket)
     @ticket = ticket
 
-    mail to: "emmatrevena@gmail.com", subject: ticket.subject
-    reply_to:
+    mail to: "emmatrevena@gmail.com",
+      subject: "New Ticket, yo! #{ticket.subject} number #{ticket.id}",
+      reply_to: "ffc5dbcb05c894ed1b266327809aa297+#{ticket.id}@inbound.postmarkapp.com"
   end
-
-  def receive(email)
-  end
-
 end

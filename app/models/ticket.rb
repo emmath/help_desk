@@ -1,12 +1,10 @@
-mitt = Postmark::Mitt.new(request.body.read)
-Ticket.create_from_postmark(mitt)
-
 class Ticket < ActiveRecord::Base
   attr_accessible :description, :from, :subject
 
   def self.create_from_postmark(mitt)
-    ticket.description = mitt.description
+    ticket_id = mitt.to.split( "@" ).first.split( "+" ).last
+    ticket = Ticket.find(ticket_id)
+    ticket.description = mitt.text_body
     ticket.save
   end
-
 end
