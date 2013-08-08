@@ -8,4 +8,4 @@ Check back for the response!
 
 So easy!
 
-![ScreenShot](public/helpdesk.tiff)
+![ScreenShot](app/assets/images/helpdesk.png)
