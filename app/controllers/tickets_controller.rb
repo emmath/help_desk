@@ -19,7 +19,7 @@ class TicketsController < ApplicationController
   def create
     @ticket = Ticket.new(params[:ticket])
     if @ticket.save
-       #TicketMailer.new_ticket(@ticket).deliver
+       TicketMailer.new_ticket(@ticket).deliver
        redirect_to @ticket, notice: "Hey stranger! Your ticket was submitted!"
     else
        render :new
