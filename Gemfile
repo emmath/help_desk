@@ -4,6 +4,8 @@ gem 'rails', '3.2.13'
 
 gem 'postmark-rails'
 
+gem 'postmark-mitt', '0.0.8'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

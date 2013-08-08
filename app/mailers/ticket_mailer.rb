@@ -5,5 +5,9 @@ class TicketMailer < ActionMailer::Base
     @ticket = ticket
 
     mail to: "emmatrevena@gmail.com", subject: ticket.subject
+    reply_to:
   end
+
+  def receive(email)
+
 end
