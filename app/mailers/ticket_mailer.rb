@@ -9,5 +9,6 @@ class TicketMailer < ActionMailer::Base
   end
 
   def receive(email)
+  end
 
 end
